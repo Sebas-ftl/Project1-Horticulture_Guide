@@ -1,0 +1,179 @@
+html {
+    background-color: #4A402B;
+    margin: 0;
+}
+
+/* Complete Navigation CSS */
+nav {
+    background-color: #63874A;
+}
+/* style for list */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+/* individual elements */
+nav li {
+    position: relative;
+}
+/* Individual box padding */
+nav li > a {
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    display: block;
+}
+/* Hover tracking */
+nav > ul> li > a:hover {
+    background: #C2D5B3;
+    color: black;
+}
+/* Submenu style */
+nav .submenu {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background: #63874A;
+    min-width: 100%;
+}
+/* shows sublevel */
+nav li:hover .submenu {
+    display: block;
+}
+/* Sublevel hover */
+nav .submenu a:hover {
+    background: #C2D5B3;
+    color: black;
+}
+/* Active page */
+nav a.active {
+    background: #384C2A;
+    font-weight: bold;
+}
+.navigation {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+/* Text styling */
+article {
+    font-size: 17px;
+}
+dt {
+    font-weight: bold;
+    padding-top: 15px;
+}
+dd {
+    background-color: #F6F4EF;
+    padding: 10px;
+}
+#aside {
+    background: linear-gradient(to bottom, #DAE6D1, #AAC596);
+    border: 1px;
+    padding: 10px;
+    font-style: italic;
+    border-radius: 25px;
+    border: 1px solid black;
+    width: 75%;
+}
+
+/* Header styling */
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+}
+
+/* Body styling */
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2.5% 2.5% 0;
+	background: #E5DFD2;
+	line-height: 1.8;
+}
+footer {
+    border-top: 2px solid black;
+    font-style: italic;
+}
+small {
+    font-style: italic;
+    font-size: 13px;
+}
+
+/* Per plant */
+.plant {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #fafafa;
+    /* max-width: 700px; */
+    font-family: Arial, sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.plant h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+.plant .media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+}
+.plant img {
+    width: 220px;
+    height: auto;
+    border-radius: 6px;
+}
+.plant .copyright {
+    /* display: block; */
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+.plant .about,
+.plant .description {
+    flex: 1;
+    margin-bottom: 1rem;
+}
+.plant p {
+    margin: 0.25rem 0;
+}
+
+@media (prefers-color-scheme: dark){
+    body {
+        background: #4A402B;
+    }
+    html {
+        background: #2D271A;
+    }
+    dd {
+        background-color: #85734C;
+    }
+    #aside {
+        background: linear-gradient(to bottom, #65874A, #384C2A);
+    }
+}

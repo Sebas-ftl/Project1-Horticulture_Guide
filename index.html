@@ -1,62 +1,54 @@
-<!-- ideal layout nav:  -->
-<!-- Home, Plants < full sun, partial sun, full shade>, planters, guide -->
-<!-- Home: what is horticulture, its importance, how it can be practiced at home
-    Plants: essential a list of a few plants, tells people about recomended sun level, water level, rec dirt type, etc
-    Platners: (may remove) Composting guide
-    Guide: Possibly used to reference symbol im using -->
 <!DOCTYPE html>
 <html lang="en">
 
     <!-- Headder information -->
     <head>
         <meta charset="utf-8" />
-        <title> Beginner Introduction to Horticulture</title>
+        <meta name="color-scheme" content="light" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <title>Basics to Horticulture</title>
     </head>
 
-    <!-- Body Contents -->
     <body>
         <!-- headder and navigation -->
+        <header role="banner" class="navigation">
+            <h1>Basics to Horticulture</h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a class="active" href="index.html" title="Introduction">Introduction</a></li>
+                    <li><a href="guide.html" title="Practices and Guides">Practices and Guides</a></li>
+                    <li>
+                        <a href="plantindex.html" title="List of Plants"> List of Plants</a>
+                        <ul role="menu" class="submenu">
+                            <li><a href="fullsunplants.html" title="Full Sun Plants">Full Sun Plants</a></li>
+                            <li><a href="partialsunplants.html" title="Partial Sun Plants">Partial Sun Plants</a></li>
+                            <li><a href="fulshadeplants.html" title="Full Shade Plants"> Full Shade Plants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Body -->
         <article>
-            <header>
-                <h1>
-                    Introduction to Horticulture
-                </h1>
-                <nav>
-                    <!-- Insert nav elements here -->
-                    <ul>
-                        <li>
-                            <a href="guide.html">Practices and Guide</a>
-                        </li>
-                        <li>
-                            <a href="plantindex.html">Plants</a>
-                        </li>
-                        
-                    </ul>
-                </nav>
-            </header>
-
-            <!-- Body -->
-            <h2>
-                What is Horticulture?
-            </h2>
+            <h2>Introduction to Horticulture</h2>
+            <h3>What is Horticulture?</h3>
             <p>
                 &nbsp;&nbsp;Horticulture is the practice of growing and caring for plants such as fruits, vegetables, flowers, and shrubs. Do you need to be a farmer or botanist to participate? No! Anyone can follow horticulture practices and growing methods whether for potted plants, lawn plants, or small backyard planter farms.
             </p>
-            <blockquote>
+            <p id="aside">
                 "<strong>horticulture</strong>, the branch of plant agriculture dealing with garden crops, generally fruits, vegetables, and ornamental plants. The word is derived from the Latin hortus, “garden,” and colere, “to cultivate.” As a general term, it covers all forms of garden management, but in ordinary use it refers to intensive commercial production. In terms of scale, horticulture falls between domestic gardening and field agriculture, though all forms of cultivation naturally have close links."
                 <br>
-                - Britannica
-            </blockquote>
-            <h2>
-                Why Start Growing?
-            </h2>
-            <p>
-                Plants are not only good for the enviroment but they can also 
+                <small>- Synge, Patrick. <a 
+                    href="https://www.britannica.com/science/horticulture" 
+                    target="_blank" 
+                    title="Britannica Dictionary">Britannica</a></small>
             </p>
-            <h2>
-                Key Terms
-            </h2>
+            <h3>Why Start Growing?</h3>
+            <p>
+                There are many reasons to start! Plants are not only good for the enviroment, they can be used to decorate a bare outdoor space, window sills, and indoor spaces lacking in some green. Additionally, they provide mental and physical benifits such as humidifying the air, promoting mindfulness, and reducing stress! Theres a reason people go &quot;forest bathing&quot;, &#40;forest walks&#41;, every once in a while!
+            </p>
             <section>
+                <h3>Key Terms</h3>
                 <dl>
                     <dt>
                         Drainage
@@ -98,7 +90,7 @@
                         Propagating
                     </dt>
                     <dd>
-                        Towards the end of a plants lift cycle theres a stage where the plant is ready to bud new life. This varys from plant to plant as some provide seeds, sprout roots at a &quot;node&quot;, simply from planting its leafs, etc.
+                        Towards the end of a plants lift cycle theres a stage where the plant is ready to bud new life. This varies from plant to plant as some provide seeds, sprout roots at a &quot;node&quot;, simply from planting its leafs, etc.
                     </dd>
                 </dl>
             </section>
@@ -107,9 +99,9 @@
     </body>
 
         <!-- Footer Contents -->
-    <footer>
+    <footer role="contentinfo">
         <address>
-            Writen by Sebastian S.<br>
+            Created by Sebastian S. <br> Email&colon; sebastian.sandoval.332@my.csun.edu
         </address>
     </footer>
 </html>
