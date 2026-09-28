@@ -127,7 +127,8 @@ small {
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 8px;
-    background: #fafafa;
+    background: #F6F4EF;
+    color: black;
     /* max-width: 700px; */
     font-family: Arial, sans-serif;
     margin-bottom: 1rem;
@@ -149,7 +150,6 @@ small {
     border-radius: 6px;
 }
 .plant .copyright {
-    /* display: block; */
     font-size: 0.75rem;
     color: #666;
     margin-bottom: 1rem;
@@ -166,6 +166,7 @@ small {
 @media (prefers-color-scheme: dark){
     body {
         background: #4A402B;
+        color: white;
     }
     html {
         background: #2D271A;
@@ -173,7 +174,15 @@ small {
     dd {
         background-color: #85734C;
     }
+    .plant{
+        background-color: #85734C;
+        color: white;
+    }
+    .plant .copyright {
+        color: lightgray;
+    }
     #aside {
         background: linear-gradient(to bottom, #65874A, #384C2A);
     }
+
 }
